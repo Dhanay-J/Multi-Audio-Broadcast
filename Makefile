@@ -5,7 +5,7 @@ LDFLAGS = -lpthread -ldl -lm
 # Source files
 SRCS = main.cpp ringbuf.cpp
 OBJS = $(SRCS:.cpp=.o)
-TARGET = main
+TARGET = multi-audio-broadcast
 
 # Miniaudio is header-only, so no .cpp file for it, but we need to link OS libraries
 # On Linux: -lpthread -ldl -lm
